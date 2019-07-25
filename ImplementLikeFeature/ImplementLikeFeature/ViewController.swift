@@ -16,5 +16,7 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func tapGesture(_ sender: Any) {
+    }
 }
 
