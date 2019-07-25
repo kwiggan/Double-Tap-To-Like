@@ -13,6 +13,7 @@
 		CF2DE4A322EA58F300729B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2DE4A222EA58F300729B45 /* Assets.xcassets */; };
 		CF2DE4A622EA58F300729B45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2DE4A422EA58F300729B45 /* LaunchScreen.storyboard */; };
 		CF2DE4B122EA58F300729B45 /* ImplementLikeFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DE4B022EA58F300729B45 /* ImplementLikeFeatureTests.swift */; };
+		CF2DE4BC22EA5BB700729B45 /* likeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DE4BB22EA5BB700729B45 /* likeAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CF2DE4AC22EA58F300729B45 /* ImplementLikeFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImplementLikeFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2DE4B022EA58F300729B45 /* ImplementLikeFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementLikeFeatureTests.swift; sourceTree = "<group>"; };
 		CF2DE4B222EA58F300729B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2DE4BB22EA5BB700729B45 /* likeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likeAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CF2DE49B22EA58F200729B45 /* AppDelegate.swift */,
 				CF2DE49D22EA58F200729B45 /* ViewController.swift */,
 				CF2DE49F22EA58F200729B45 /* Main.storyboard */,
+				CF2DE4BB22EA5BB700729B45 /* likeAnimator.swift */,
 				CF2DE4A222EA58F300729B45 /* Assets.xcassets */,
 				CF2DE4A422EA58F300729B45 /* LaunchScreen.storyboard */,
 				CF2DE4A722EA58F300729B45 /* Info.plist */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2DE4BC22EA5BB700729B45 /* likeAnimator.swift in Sources */,
 				CF2DE49E22EA58F200729B45 /* ViewController.swift in Sources */,
 				CF2DE49C22EA58F200729B45 /* AppDelegate.swift in Sources */,
 			);
