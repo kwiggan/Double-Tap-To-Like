@@ -10,13 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var tapGesture: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        // Double Tap
+        let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
+        doubleTapGesture.numberOfTapsRequired = 2
+        doubleTapView.addGestureRecognizer(doubleTapGesture)
+     
     }
-
-
-    @IBAction func tapGesture(_ sender: Any) {
-    }
+    
+    // Double tap action
+    @objc func handleDoubleTap() {
+        label.text = "Double tap recognized"
+        
+        // example task: change background color
+        if doubleTapView.backgroundColor == UIColor.yellow {
+            doubleTapView.backgroundColor = UIColor.green
+        } else {
+            doubleTapView.backgroundColor = UIColor.yellow
+        }
+    
 }
 
