@@ -14,23 +14,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        // Double Tap
-        let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
-        doubleTapGesture.numberOfTapsRequired = 2
-        doubleTapView.addGestureRecognizer(doubleTapGesture)
-     
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTap(gesture:)))
+        tapGesture.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tapGesture)
+}
+    @objc func doubleTap(gesture: UITapGestureRecognizer) {
+        print("double tap called")
     }
-    
-    // Double tap action
-    @objc func handleDoubleTap() {
-        label.text = "Double tap recognized"
-        
-        // example task: change background color
-        if doubleTapView.backgroundColor == UIColor.yellow {
-            doubleTapView.backgroundColor = UIColor.green
-        } else {
-            doubleTapView.backgroundColor = UIColor.yellow
-        }
-    
 }
 
