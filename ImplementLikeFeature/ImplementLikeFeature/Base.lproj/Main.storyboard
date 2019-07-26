@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Photo Cell-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImplementLikeFeature" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="photoCell" customModule="ImplementLikeFeature" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTZ-gH-d7M">
-                                <rect key="frame" x="74" y="257" width="299" height="316"/>
+                                <rect key="frame" x="58" y="271" width="299" height="316"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -27,7 +27,7 @@
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-CA-2oV">
-                                <rect key="frame" x="325" y="503" width="48" height="52"/>
+                                <rect key="frame" x="309" y="517" width="48" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -39,13 +39,15 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="isLikedImageView" destination="Uh0-CA-2oV" id="Jl6-NB-sQb"/>
+                        <outlet property="photoImageView" destination="FTZ-gH-d7M" id="0gx-HD-ALf"/>
                         <outlet property="tapGesture" destination="bbY-C8-aV3" id="93H-YZ-vRE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bbY-C8-aV3"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="-576"/>
+            <point key="canvasLocation" x="-3688" y="-631"/>
         </scene>
     </scenes>
     <resources>

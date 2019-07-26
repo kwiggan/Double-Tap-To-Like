@@ -9,22 +9,29 @@
 import UIKit
 
 class LikeAnimator: UIViewController {
+    
+    //take in the container, the view that is going to hold this animated view
+    //implement the constraints for the animation view
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    //create an initializer
+    let constrainer : UIView
+    let layoutConstraint: NSLayoutConstraint
+    
+    init(container: UIView, layoutConstraint: NSLayoutConstraint){
+        
+        self.constrainer = container
+        self.layoutConstraint = layoutConstraint
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     }
     
 
-    /*
-    // MARK: - Navigation
+   
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
-}
