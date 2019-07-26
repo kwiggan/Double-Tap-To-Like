@@ -15,12 +15,12 @@ class LikeAnimator: UIViewController {
     
 
     //create an initializer
-    let constrainer : UIView
+    let container : UIView
     let layoutConstraint: NSLayoutConstraint
     
     init(container: UIView, layoutConstraint: NSLayoutConstraint){
         
-        self.constrainer = container
+        self.container = container
         self.layoutConstraint = layoutConstraint
         
     }
@@ -29,7 +29,36 @@ class LikeAnimator: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //create animate function. This will have all the logic for the bouncing effect of the heart icon
+    
+    func animate(completion: @escaping () -> Void) {
+        layoutConstraint.constant = 100
+        
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2,
+        options: .curveLinear,
+        animations: { [weak self] in
+            //this is what i want to do when we do the animation
+            self?.container.layoutIfNeeded()
+            
+            
+            
+            
+        }) {[weak self] (_) in
+           self?.layoutConstraint.constant = 0
+    
+    UIView.animate(withDuration: 0.3, animations: {
+    
+        self?.container.layoutIfNeeded()
+    completion()
+    })
+        
+        
+        
     }
+    
+    
+}
+
     
 
    
